@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* COLORS */
+:root {
+  --color-background: #f0f2f5;
+  --color-text: #363f5f;
+  --color-title: #363f5f;
+  --color-shape: #ffffff;
+  --color-red: #e52e4d;
+  --color-green: #33cc95;
+  --color-blue: #5429cc;
+  --color-blue-light: #6933ff;
+  --primary-color: #23a6f0;
+  --secondary-color: #ffa900;
+  --text-color: #252b42;
+  --second-text-color: #737373;
+}
+
+* {
+  font-family: "Montserrat";
+}
+
+/* MENU */
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px;
+  margin: 0 2rem;
+
+  .logo {
+    p {
+      font-size: 24px;
+      display: flex;
+      align-items: center;
+      font-weight: bold;
+      color: var(--text-color);
+    }
+  }
+
+  nav {
+    align-items: center;
+
+    ul {
+      display: flex;
+      list-style: none;
+
+      li {
+        padding: 0 16px;
+        cursor: pointer;
+
+        a {
+          font-weight: bold;
+          text-decoration: none;
+
+          color: var(--second-text-color);
+        }
+      }
+    }
+  }
+
+  button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: transparent;
+    border: none;
+    padding: none;
+    border-radius: 16px;
+    cursor: pointer;
+
+    img {
+      padding-right: 16px;
+    }
+
+    p {
+      font-size: 14px;
+      padding-left: 100;
+      font-weight: bold;
+      color: var(--primary-color);
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    margin: 0 0;
+
+    .logo {
+      p {
+        font-size: 16px;
+      }
+    }
+
+    nav {
+        display: none;
+
+      ul > li {
+        display: none;
+      }
+    }
+
+    .actions {
+      button {
+        border: none;
+        padding: none;
+        border-radius: 8px;
+        cursor: pointer;
+
+        img {
+          padding: 0;
+        }
+
+        p {
+          font-size: 14px;
+          padding-left: 100;
+          font-weight: bold;
+          color: var(--primary-color);
+        }
+      }
+      .login_btn {
+        display: none;
+      }
+      .favorits_btn {
+        display: none;
+      }
+    }
+  }
+}
