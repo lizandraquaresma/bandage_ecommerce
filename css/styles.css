@@ -3,6 +3,7 @@
 /* COLORS */
 :root {
   --color-background: #f0f2f5;
+  --dark-background: #252b42;
   --color-text: #363f5f;
   --color-title: #363f5f;
   --color-shape: #ffffff;
@@ -22,6 +23,10 @@
 
 * {
   font-family: "Montserrat";
+  margin-right: 0px;
+  margin-left: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
   background-color: var(--color-shape);
 }
 
@@ -536,6 +541,120 @@
   }
 }
 
+footer {
+  padding: 32px 160px;
+  background-color: var(--dark-background);
+  display: flex;
+  flex-direction: column;
+  gap: 96px;
+
+  h3 {
+    background-color: transparent;
+    color: white;
+    padding: 8px 0px;
+  }
+  p {
+    background-color: transparent;
+    color: white;
+  }
+  section {
+    background-color: transparent;
+  }
+  ul {
+    padding: 0px;
+    background-color: transparent;
+    list-style: none;
+    li {
+      background-color: transparent;
+
+      padding: 8px 0;
+      a {
+        background-color: transparent;
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+      }
+      p{
+        font-weight: bold;
+      }
+    }
+  }
+
+  .intro {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    .texts {
+      display: flex;
+      flex-direction: column;
+    }
+    button {
+      background-color: var(--primary-color);
+      border: none;
+      padding: 16px 24px;
+      border-radius: 4px;
+      cursor: pointer;
+      p{
+        color: white;
+        font-weight: bold;
+      }
+    }
+    button:hover {
+      background-color: var(--secondary-color);
+    }
+  }
+
+  .body {
+    background-color: transparent;
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  .getIn {
+    ul {
+      li {
+        gap: 16px;
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        img {
+          background-color: transparent;
+        }
+      }
+    }
+  }
+
+  .contact {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    ul {
+      display: flex;
+      flex-direction: row;
+      #facebook_mobile {
+        display: none;
+      }
+      #insta_red {
+        display: none;
+      }
+      #youtube {
+        display: none;
+      }
+      li {
+        padding: 8px;
+        a {
+          img {
+            background-color: transparent;
+          }
+        }
+      }
+    }
+  }
+}
+
 @media (max-width: 768px) {
   .menu {
     display: flex;
@@ -724,7 +843,7 @@
     display: flex;
     flex-wrap: nowrap;
     flex-direction: column-reverse;
-    padding: 0px;
+    padding: 8px;
 
     .banner {
       flex: 1;
@@ -802,6 +921,82 @@
           height: auto;
           object-fit: contain;
         }
+      }
+    }
+  }
+
+  footer {
+    padding: 48px;
+    background-color: var(--dark-background);
+    display: flex;
+    flex-direction: column;
+
+    h3 {
+      background-color: transparent;
+      color: white;
+      padding: 16px 0px;
+    }
+    p {
+      background-color: transparent;
+      color: white;
+    }
+    section {
+      background-color: transparent;
+    }
+    ul {
+      padding: 0px;
+      background-color: transparent;
+      list-style: none;
+      li {
+        background-color: transparent;
+
+        padding: 8px 0;
+        a {
+          background-color: transparent;
+          text-decoration: none;
+          color: white;
+        }
+      }
+    }
+
+    .intro {
+      flex-direction: column;
+      align-items: start;
+      justify-content: center;
+      gap: 40px;
+    }
+
+    .body {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 16px;
+    }
+
+    .contact {
+      display: flex;
+      align-items: start;
+      flex-direction: column;
+      gap: 8px;
+      ul {
+        display: flex;
+        flex-direction: row;
+        #insta {
+          display: none;
+        }
+        #facebook_web {
+          display: none;
+        }
+        #facebook_mobile {
+          display: flex;
+        }
+        #insta_red {
+          display: flex;
+        }
+        #youtube {
+          display: flex;
+        }
+        
       }
     }
   }
