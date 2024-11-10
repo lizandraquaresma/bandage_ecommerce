@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -43,32 +43,80 @@
     </header>
 
     <main>
-      <!-- <section id="homeCarousel">
-        <section class="carousel">
-          <section class="carousel-item">
-            <img src="imgs/slide1.jpg" alt="" />
-            <section class="carousel-caption">
-              <h2>GROCERIES DELIVERY</h2>
-              <p>
-                We know how large objects will act, but things on a small scale
-                just do not act that way.
-              </p>
-              <button class="start_now_btn">Start Now</button>
+      <section class="wrapper">
+        <section class="slide-wrapper" data-slide="wrapper">
+          <button
+            class="slide-nav-button slide-nav-previous"
+            data-slide="nav-previous-button"
+          >
+            &#x276E;
+          </button>
+          <button
+            class="slide-nav-button slide-nav-next"
+            data-slide="nav-next-button"
+          >
+            &#x276F;
+          </button>
+          <section class="slide-list" data-slide="list">
+            <section class="slide-item" data-slide="item" data-index="0">
+              <section class="slide-content">
+                <img
+                  class="slide-image"
+                  src="imgs/slide1.jpg"
+                  alt="frenchfries"
+                />
+                <section class="slide-description">
+                  <h3>GROCERIES DELIVERY</h3>
+                  <p>
+                    We know how large objects will act, but things on a small
+                    scale just do not act that way.
+                  </p>
+                  <button class="start_now_btn">Start Now</button>
+                </section>
+              </section>
+            </section>
+            <section class="slide-item" data-slide="item" data-index="0">
+              <section class="slide-content">
+                <img
+                  class="slide-image"
+                  src="imgs/slide1.jpg"
+                  alt="frenchfries"
+                />
+                <section class="slide-description">
+                  <h3>GROCERIES DELIVERY</h3>
+                  <p>
+                    We know how large objects will act, but things on a small
+                    scale just do not act that way.
+                  </p>
+                  <button class="start_now_btn">Start Now</button>
+                </section>
+              </section>
+            </section>
+            <section class="slide-item" data-slide="item" data-index="0">
+              <section class="slide-content">
+                <img
+                  class="slide-image"
+                  src="imgs/slide1.jpg"
+                  alt="frenchfries"
+                />
+                <section class="slide-description">
+                  <h3>GROCERIES DELIVERY</h3>
+                  <p>
+                    We know how large objects will act, but things on a small
+                    scale just do not act that way.
+                  </p>
+                  <button class="start_now_btn">Start Now</button>
+                </section>
+              </section>
             </section>
           </section>
-          <section class="carousel-item">
-            <img src="imgs/shop-hero-3-product-slide-2.jpg" alt="" />
-            <section class="carousel-caption">
-              <h2>GROCERIES DELIVERY</h2>
-              <p>
-                We know how large objects will act, but things on a small scale
-                just do not act that way.
-              </p>
-              <button class="start_now_btn">Start Now</button>
-            </section>
-          </section>
+          <section
+            class="slide-controls"
+            data-slide="controls-wrapper"
+          ></section>
         </section>
-      </section> -->
+      </section>
+
       <section id="categories">
         <section class="container">
           <section class="card-texts">
@@ -204,6 +252,7 @@
           </section>
         </section>
       </section>
+
       <section class="info">
         <section class="item">
           <p id="index">1.</p>
@@ -340,6 +389,7 @@
           <img src="imgs/hamburguer.png" alt="banner" />
         </section>
       </section>
+
       <section id="bestseller">
         <section class="title"><h3>BESTSELLER PRODUCTS</h3></section>
 
@@ -396,6 +446,7 @@
           <li><img src="imgs/icons/reddit.svg" alt="social_media_icon" /></li>
         </ul>
       </section>
+
       <section class="posts_intro">
         <p>Practice Advice</p>
         <h2>Featured Posts</h2>
@@ -599,5 +650,14 @@
         </ul>
       </section>
     </footer>
+
+    <script src="slides.js"></script>
+    <script>
+      initSlider({
+        autoPlay: true,
+        startAtIndex: 0,
+        timeInterval: 3000,
+      });
+    </script>
   </body>
 </html>

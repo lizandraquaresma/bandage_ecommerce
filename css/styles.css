@@ -23,11 +23,135 @@
 
 * {
   font-family: "Montserrat";
-  margin-right: 0px;
-  margin-left: 0px;
-  margin-top: 0px;
-  margin-bottom: 0px;
+  padding: 0;
+  margin-right: 0;
+  margin-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  box-sizing: border-box;
   background-color: var(--color-shape);
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.slide-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  overflow: hidden;
+  width: 100%;
+}
+
+.slide-list {
+  display: flex;
+}
+
+.slide-item {
+  cursor: grab;
+  flex-shrink: 0;
+  
+  padding: 0;
+  width: 100%;
+}
+
+.slide-content {
+  height: 100%;
+  border-radius: 16px;
+  
+  /* border: 1px solid #170606; */
+  position: relative;
+}
+
+.slide-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.slide-description {
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  background-color: transparent;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 30px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  max-width: 100%;
+  gap: 16px;
+}
+
+.slide-description h3 {
+  background-color: transparent;
+  color: #ffffff;
+  font-size: 40px;
+  position: relative;
+}
+
+.slide-description p {
+  color: #ffffff;
+  font-weight: 200;
+  background-color: transparent;
+  /* font-size: 24px; */
+}
+
+.slide-description button {
+  color: #ffffff;
+  background-color: var(--primary-color);
+  border: none;
+  padding: 8px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.slide-description button:hover {
+  background-color: var(--secondary-color);
+}
+
+.slide-nav-button {
+  background: transparent;
+  color: #fff;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  font-size: 36px;
+  position: absolute;
+  z-index: 1;
+}
+
+.slide-nav-previous {
+  left: 20px;
+}
+
+.slide-nav-next {
+  right: 20px;
+}
+
+.slide-controls {
+  margin: 8px;
+}
+
+.slide-control-button {
+  width: 24px;
+  color: #fff;
+  cursor: pointer;
+  background: transparent;
+  font-size: 32px;
+  margin: 0 1px;
+}
+
+.slide-control-button.active {
+  color: #cd8cf5;
 }
 
 /* MENU */
@@ -1135,5 +1259,38 @@ footer {
     align-items: center;
     justify-content: center;
     justify-items: center;
+  }
+
+  .slide-image {
+    height: 600px;
+    object-fit: cover;
+  }
+
+  .slide-description {
+    padding: 10px;
+  }
+
+  .slide-description h3 {
+    font-size: 24px;
+  }
+
+  .slide-nav-button {
+    font-size: 28px;
+  }
+
+  .slide-nav-previous {
+    left: 10px;
+  }
+
+  .slide-nav-next {
+    right: 10px;
+  }
+
+  .slide-controls {
+    margin: 15px auto 0;
+  }
+
+  .slide-control-button {
+    font-size: 14px;
   }
 }
