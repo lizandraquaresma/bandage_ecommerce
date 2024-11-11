@@ -1221,6 +1221,10 @@ footer {
         }
       }
 
+      .products .item:nth-child(n+4) {
+        display: none;
+      }
+
       .products {
         display: flex;
         flex-direction: column;
