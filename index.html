@@ -1,11 +1,719 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bandage</title>
-</head>
-<body>
-    
-</body>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <section class="menu">
+        <section class="logo"><p>Bandage</p></section>
+
+        <section class="navigator">
+          <nav>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Shop</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">Pages</a></li>
+            </ul>
+          </nav>
+        </section>
+
+        <section class="actions">
+          <button class="login_btn">
+            <img src="imgs/icons/person.svg" alt="person_icon" />
+            <p>Login / Register</p>
+          </button>
+          <button class="search_btn">
+            <img src="imgs/icons/search.svg" alt="cart_icon" />
+          </button>
+          <button class="search_mobile">
+            <img src="imgs/icons/search_blue.svg" alt="search_icon" />
+          </button>
+          <button class="cart_btn">
+            <img src="imgs/icons/cart.svg" alt="cart_icon" />
+          </button>
+          <button class="cart_mobile">
+            <img src="imgs/icons/cart_blue.svg" alt="cart_icon" />
+          </button>
+          <button class="favorits_btn">
+            <img src="imgs/icons/favority.svg" alt="favority" />
+          </button>
+          <button class="menu_btn">
+            <img src="imgs/icons/menu_icon.svg" alt="menu_icon" />
+          </button>
+        </section>
+      </section>
+    </header>
+
+    <main>
+      <section class="navigator_mobile">
+        <nav>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Product</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+      </section>
+
+      <section class="wrapper">
+        <section class="slide-wrapper" data-slide="wrapper">
+          <button
+            class="slide-nav-button slide-nav-previous"
+            data-slide="nav-previous-button"
+          >
+            &#x276E;
+          </button>
+          <button
+            class="slide-nav-button slide-nav-next"
+            data-slide="nav-next-button"
+          >
+            &#x276F;
+          </button>
+          <section class="slide-list" data-slide="list">
+            <section class="slide-item" data-slide="item" data-index="0">
+              <section class="slide-content">
+                <img
+                  class="slide-image"
+                  src="imgs/slide5.jpg"
+                  alt="frenchfries"
+                />
+                <section class="slide-description">
+                  <h3>GROCERIES DELIVERY</h3>
+                  <p>
+                    We know how large objects will act, but things on a small
+                    scale just do not act that way.
+                  </p>
+                  <button class="start_now_btn">Start Now</button>
+                </section>
+              </section>
+            </section>
+            <section class="slide-item" data-slide="item" data-index="1">
+              <section class="slide-content">
+                <img
+                  class="slide-image"
+                  src="imgs/slide6.jpg"
+                  alt="frenchfries"
+                />
+                <section class="slide-description">
+                  <h3>GROCERIES DELIVERY</h3>
+                  <p>
+                    We know how large objects will act, but things on a small
+                    scale just do not act that way.
+                  </p>
+                  <button class="start_now_btn">Start Now</button>
+                </section>
+              </section>
+            </section>
+            <section class="slide-item" data-slide="item" data-index="2">
+              <section class="slide-content">
+                <img
+                  class="slide-image"
+                  src="imgs/slide7.jpg"
+                  alt="frenchfries"
+                />
+                <section class="slide-description">
+                  <h3>GROCERIES DELIVERY</h3>
+                  <p>
+                    We know how large objects will act, but things on a small
+                    scale just do not act that way.
+                  </p>
+                  <button class="start_now_btn">Start Now</button>
+                </section>
+              </section>
+            </section>
+          </section>
+          <section
+            class="slide-controls"
+            data-slide="controls-wrapper"
+          ></section>
+        </section>
+      </section>
+
+      <section id="categories">
+        <section class="container">
+          <section class="card-texts">
+            <section class="tag"><p>Ends Today</p></section>
+
+            <section class="title"><h3>Mercearia</h3></section>
+            <section class="subtitle"><p>Explore Items</p></section>
+          </section>
+          <section>
+            <img src="imgs/sorvete.webp" alt="skull" />
+          </section>
+        </section>
+
+        <section class="container">
+          <section class="card-texts">
+            <section class="tag"><p>Ends Today</p></section>
+
+            <section class="title"><h3>Hortifruti</h3></section>
+            <section class="subtitle"><p>Explore Items</p></section>
+          </section>
+          <section>
+            <img src="imgs/apples.webp" alt="skull" />
+          </section>
+        </section>
+
+        <section class="container">
+          <section class="card-texts">
+            <section class="tag"><p>Açougue</p></section>
+
+            <section class="title"><h3>Açougue</h3></section>
+            <section class="subtitle"><p>Explore Items</p></section>
+          </section>
+          <section>
+            <img src="imgs/carnes.webp" alt="skull" />
+          </section>
+        </section>
+      </section>
+
+      <section id="store">
+        <section class="banner">
+          <img src="imgs/banner1.jpg" alt="banner" />
+        </section>
+
+        <section class="container">
+          <section class="menu">
+            <section class="logo"><p>BESTSELLER PRODUCTS</p></section>
+            <section class="categories">
+              <ul>
+                <li><a>Mercearia</a></li>
+                <li><a>Hortifruti</a></li>
+                <li><a>Açougue</a></li>
+              </ul>
+            </section>
+            <section class="controllers">
+              <button class="prev_btn">
+                <img src="imgs/icons/prev.svg" alt="prev" />
+              </button>
+              <button class="next_btn">
+                <img src="imgs/icons/next.svg" alt="next" />
+              </button>
+            </section>
+          </section>
+          <section class="products">
+            <section class="item">
+              <img src="imgs/sorvete.webp" alt="sorvete" />
+              <section class="item_bio">
+                <section class="title"><h3>Sorvete</h3></section>
+                <section class="subtitle"><p>Explore Items</p></section>
+                <section class="prices">
+                  <p id="old">R$ 12,48</p>
+                  <p id="new">R$ 9,99</p>
+                </section>
+              </section>
+            </section>
+            <section class="item">
+              <img src="imgs/apples.webp" alt="apples" />
+              <section class="item_bio">
+                <section class="title"><h3>Maça Verde</h3></section>
+                <section class="subtitle"><p>Explore Items</p></section>
+                <section class="prices">
+                  <p id="old">R$ 12,48</p>
+                  <p id="new">R$ 9,99</p>
+                </section>
+              </section>
+            </section>
+            <section class="item">
+              <img src="imgs/carnes.webp" alt="carnes" />
+              <section class="item_bio">
+                <section class="title"><h3>Carne</h3></section>
+                <section class="subtitle"><p>Explore Items</p></section>
+                <section class="prices">
+                  <p id="old">R$ 12,48</p>
+                  <p id="new">R$ 9,99</p>
+                </section>
+              </section>
+            </section>
+            <section class="item">
+              <img src="imgs/apples.webp" alt="apples" />
+              <section class="item_bio">
+                <section class="title"><h3>Maçã Verde</h3></section>
+                <section class="subtitle"><p>Explore Items</p></section>
+                <section class="prices">
+                  <p id="old">R$ 12,48</p>
+                  <p id="new">R$ 9,99</p>
+                </section>
+              </section>
+            </section>
+            <section class="item">
+              <img src="imgs/carnes.webp" alt="carnes" />
+              <section class="item_bio">
+                <section class="title"><h3>Carne</h3></section>
+                <section class="subtitle"><p>Explore Items</p></section>
+                <section class="prices">
+                  <p id="old">R$ 12,48</p>
+                  <p id="new">R$ 9,99</p>
+                </section>
+              </section>
+            </section>
+            <section class="item">
+              <img src="imgs/apples.webp" alt="apples" />
+              <section class="item_bio">
+                <section class="title"><h3>Sorvete</h3></section>
+                <section class="subtitle"><p>Explore Items</p></section>
+                <section class="prices">
+                  <p id="old">R$ 12,48</p>
+                  <p id="new">R$ 9,99</p>
+                </section>
+              </section>
+            </section>
+          </section>
+        </section>
+      </section>
+
+      <section class="blog">
+        <section class="banner">
+          <img src="imgs/motocicle.png" alt="banner" />
+        </section>
+        <section class="sale">
+          <h3>Oferta da Semana</h3>
+          <p id="description">
+            We focus on ergonomics and meeting you where you work. It's only a
+            keystroke away.
+          </p>
+          <img src="imgs/carne2.png" alt="product_img" />
+
+          <p id="name">Coxão Mole</p>
+          <section class="prices">
+            <p id="old">R$ 12,48</p>
+            <p id="new">R$ 9,99</p>
+          </section>
+        </section>
+      </section>
+
+      <section class="info">
+        <section class="item">
+          <p id="index">1.</p>
+          <section class="texts">
+            <h3 id="title">Easy to use</h3>
+            <p id="description">
+              Things on a very small that you have any direct
+            </p>
+          </section>
+        </section>
+        <section class="item">
+          <p id="index">2.</p>
+          <section class="texts">
+            <h3 id="title">Easy to use</h3>
+            <p id="description">
+              Things on a very small that you have any direct
+            </p>
+          </section>
+        </section>
+        <section class="item">
+          <p id="index">3.</p>
+          <section class="texts">
+            <h3 id="title">Easy to use</h3>
+            <p id="description">
+              Things on a very small that you have any direct
+            </p>
+          </section>
+        </section>
+        <section class="item">
+          <p id="index">4.</p>
+          <section class="texts">
+            <h3 id="title">Easy to use</h3>
+            <p id="description">
+              Things on a very small that you have any direct
+            </p>
+          </section>
+        </section>
+      </section>
+
+      <section id="store2">
+        <section class="container">
+          <section class="menu">
+            <section class="logo"><p>BESTSELLER PRODUCTS</p></section>
+            <section class="categories">
+              <ul>
+                <li><a>Mercearia</a></li>
+                <li><a>Hortifruti</a></li>
+                <li><a>Açougue</a></li>
+              </ul>
+            </section>
+            <section class="controllers">
+              <button class="prev_btn">
+                <img src="imgs/icons/prev.svg" alt="prev" />
+              </button>
+              <button class="next_btn">
+                <img src="imgs/icons/next.svg" alt="next" />
+              </button>
+            </section>
+          </section>
+          <section class="products">
+            <section class="item">
+              <img src="imgs/sorvete.webp" alt="sorvete" />
+              <section class="item_bio">
+                <section class="title"><h3>Sorvete</h3></section>
+                <section class="subtitle"><p>Explore Items</p></section>
+                <section class="prices">
+                  <p id="old">R$ 12,48</p>
+                  <p id="new">R$ 9,99</p>
+                </section>
+              </section>
+            </section>
+            <section class="item">
+              <img src="imgs/apples.webp" alt="apples" />
+              <section class="item_bio">
+                <section class="title"><h3>Maça Verde</h3></section>
+                <section class="subtitle"><p>Explore Items</p></section>
+                <section class="prices">
+                  <p id="old">R$ 12,48</p>
+                  <p id="new">R$ 9,99</p>
+                </section>
+              </section>
+            </section>
+            <section class="item">
+              <img src="imgs/carnes.webp" alt="carnes" />
+              <section class="item_bio">
+                <section class="title"><h3>Carne</h3></section>
+                <section class="subtitle"><p>Explore Items</p></section>
+                <section class="prices">
+                  <p id="old">R$ 12,48</p>
+                  <p id="new">R$ 9,99</p>
+                </section>
+              </section>
+            </section>
+            <section class="item">
+              <img src="imgs/apples.webp" alt="apples" />
+              <section class="item_bio">
+                <section class="title"><h3>Maçã Verde</h3></section>
+                <section class="subtitle"><p>Explore Items</p></section>
+                <section class="prices">
+                  <p id="old">R$ 12,48</p>
+                  <p id="new">R$ 9,99</p>
+                </section>
+              </section>
+            </section>
+            <section class="item">
+              <img src="imgs/carnes.webp" alt="carnes" />
+              <section class="item_bio">
+                <section class="title"><h3>Carne</h3></section>
+                <section class="subtitle"><p>Explore Items</p></section>
+                <section class="prices">
+                  <p id="old">R$ 12,48</p>
+                  <p id="new">R$ 9,99</p>
+                </section>
+              </section>
+            </section>
+            <section class="item">
+              <img src="imgs/apples.webp" alt="apples" />
+              <section class="item_bio">
+                <section class="title"><h3>Sorvete</h3></section>
+                <section class="subtitle"><p>Explore Items</p></section>
+                <section class="prices">
+                  <p id="old">R$ 12,48</p>
+                  <p id="new">R$ 9,99</p>
+                </section>
+              </section>
+            </section>
+          </section>
+        </section>
+        <section class="banner">
+          <img src="imgs/banner2.jpg" alt="banner" />
+        </section>
+
+        <!-- store -->
+      </section>
+
+      <section class="blog2">
+        <section class="sale">
+          <h3>Oferta da Semana</h3>
+          <p id="description">
+            We focus on ergonomics and meeting you where you work. It's only a
+            keystroke away.
+          </p>
+          <img src="imgs/caramel.png" alt="product_img" />
+
+          <p id="name">Caramelo</p>
+          <section class="prices">
+            <p id="old">R$ 12,48</p>
+            <p id="new">R$ 9,99</p>
+          </section>
+        </section>
+        <section class="banner">
+          <img src="imgs/hamburguer.png" alt="banner" />
+        </section>
+      </section>
+
+      <section id="bestseller">
+        <section class="title"><h3>BESTSELLER PRODUCTS</h3></section>
+
+        <section class="products_list">
+          <section class="item">
+            <img src="imgs/vaso.png" alt="product" />
+
+            <h3 id="title">Easy to use</h3>
+            <p id="subtitle">English Department</p>
+            <section class="prices">
+              <p id="old">R$ 12,48</p>
+              <p id="new">R$ 9,99</p>
+            </section>
+          </section>
+          <section class="item">
+            <img src="imgs/cheese.png" alt="product" />
+
+            <h3 id="title">Easy to use</h3>
+            <p id="subtitle">English Department</p>
+            <section class="prices">
+              <p id="old">R$ 12,48</p>
+              <p id="new">R$ 9,99</p>
+            </section>
+          </section>
+          <section class="item">
+            <img src="imgs/limp.png" alt="product" />
+
+            <h3 id="title">Easy to use</h3>
+            <p id="subtitle">English Department</p>
+            <section class="prices">
+              <p id="old">R$ 12,48</p>
+              <p id="new">R$ 9,99</p>
+            </section>
+          </section>
+          <section class="item">
+            <img src="imgs/caramel2.png" alt="product" />
+
+            <h3 id="title">Easy to use</h3>
+            <p id="subtitle">English Department</p>
+            <section class="prices">
+              <p id="old">R$ 12,48</p>
+              <p id="new">R$ 9,99</p>
+            </section>
+          </section>
+        </section>
+      </section>
+
+      <section id="social_media">
+        <ul>
+          <li><img src="imgs/icons/hole.svg" alt="social_media_icon" /></li>
+          <li><img src="imgs/icons/lyft.svg" alt="social_media_icon" /></li>
+          <li><img src="imgs/icons/folha.svg" alt="social_media_icon" /></li>
+          <li><img src="imgs/icons/aws.svg" alt="social_media_icon" /></li>
+          <li><img src="imgs/icons/reddit.svg" alt="social_media_icon" /></li>
+        </ul>
+      </section>
+
+      <section class="posts_intro">
+        <p>Practice Advice</p>
+        <h2>Featured Posts</h2>
+      </section>
+
+      <section class="posts">
+        <section class="post">
+          <img src="imgs/street.jpg" alt="city" />
+          <section class="bio">
+            <nav>
+              <ul>
+                <li><a href="#">Google</a></li>
+                <li><a href="#">Trending</a></li>
+                <li><a href="#">New</a></li>
+              </ul>
+            </nav>
+            <h4>Loudest à la Madison #1 (L'integral)</h4>
+            <p>
+              We focus on ergonomics and meeting you where you work. It's only a
+              keystroke away.
+            </p>
+            <ul>
+              <li>
+                <img src="imgs/icons/clock_icon.svg" alt="clock_icon" />
+                <p>22 April 2021</p>
+              </li>
+              <li>
+                <img src="imgs/icons/graphic_icon.svg" alt="graphic_icon" />
+                <p>10 Comments</p>
+              </li>
+            </ul>
+            <button>
+              <p>Learn More</p>
+              <img src="imgs/icons/arrow_right.svg" alt="arrow_icon" />
+            </button>
+          </section>
+        </section>
+        <section class="post">
+          <img src="imgs/pink_fusca.jpg" alt="city" />
+          <section class="bio">
+            <nav>
+              <ul>
+                <li><a href="#">Google</a></li>
+                <li><a href="#">Trending</a></li>
+                <li><a href="#">New</a></li>
+              </ul>
+            </nav>
+            <h4>Loudest à la Madison #1 (L'integral)</h4>
+            <p>
+              We focus on ergonomics and meeting you where you work. It's only a
+              keystroke away.
+            </p>
+            <ul>
+              <li>
+                <img src="imgs/icons/clock_icon.svg" alt="clock_icon" />
+                <p>22 April 2021</p>
+              </li>
+              <li>
+                <img src="imgs/icons/graphic_icon.svg" alt="graphic_icon" />
+                <p>10 Comments</p>
+              </li>
+            </ul>
+            <button>
+              <p>Learn More</p>
+              <img src="imgs/icons/arrow_right.svg" alt="arrow_icon" />
+            </button>
+          </section>
+        </section>
+        <section class="post">
+          <img src="imgs/umbrella.jpg" alt="city" />
+          <section class="bio">
+            <nav>
+              <ul>
+                <li><a href="#">Google</a></li>
+                <li><a href="#">Trending</a></li>
+                <li><a href="#">New</a></li>
+              </ul>
+            </nav>
+            <h4>Loudest à la Madison #1 (L'integral)</h4>
+            <p>
+              We focus on ergonomics and meeting you where you work. It's only a
+              keystroke away.
+            </p>
+            <ul>
+              <li>
+                <img src="imgs/icons/clock_icon.svg" alt="clock_icon" />
+                <p>22 April 2021</p>
+              </li>
+              <li>
+                <img src="imgs/icons/graphic_icon.svg" alt="graphic_icon" />
+                <p>10 Comments</p>
+              </li>
+            </ul>
+            <button>
+              <p>Learn More</p>
+              <img src="imgs/icons/arrow_right.svg" alt="arrow_icon" />
+            </button>
+          </section>
+        </section>
+      </section>
+    </main>
+
+    <footer>
+      <section class="intro">
+        <section class="texts">
+          <h3>Consulting Agency For Your Business</h3>
+          <p>the quick fox jumps over the lazy dog</p>
+        </section>
+        <button><p>Contact Us</p></button>
+      </section>
+      <section class="body">
+        <section class="company">
+          <h3>Company Info</h3>
+          <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Carrier</a></li>
+            <li><a href="#">We are hiring</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+        </section>
+        <section class="legal">
+          <h3>Legal</h3>
+          <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Carrier</a></li>
+            <li><a href="#">We are hiring</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+        </section>
+        <section class="features">
+          <h3>Features</h3>
+          <ul>
+            <li><a href="#">Business Marketing</a></li>
+            <li><a href="#">User Analytic</a></li>
+            <li><a href="#">Live Chat</a></li>
+            <li><a href="#">Unlimited Support</a></li>
+          </ul>
+        </section>
+        <section class="resources">
+          <h3>Resources</h3>
+          <ul>
+            <li><a href="#">IOS &amp; Android</a></li>
+            <li><a href="#">Watch a Demo</a></li>
+            <li><a href="#">Customers</a></li>
+            <li><a href="#">API</a></li>
+          </ul>
+        </section>
+        <section class="getIn">
+          <h3>Get In Touch</h3>
+          <ul>
+            <li>
+              <img src="imgs/icons/phone.svg" alt="phone_icon" />
+              <p>(480) 555-0103</p>
+            </li>
+            <li>
+              <img src="imgs/icons/map.svg" alt="map_icon" />
+              <p>4517 Washington Ave.</p>
+              >
+            </li>
+            <li>
+              <img src="imgs/icons/send.svg" alt="send_icon" />
+              <p>debra.holt@example.com</p>
+            </li>
+          </ul>
+        </section>
+      </section>
+
+      <section class="contact">
+        <h3>Made With Love By Finland All Right Reserved</h3>
+        <ul>
+          <li id="facebook_web">
+            <a href=""
+              ><img src="imgs/icons/facebook.svg" alt="facebook_logo"
+            /></a>
+          </li>
+          <li id="facebook_mobile">
+            <a href=""
+              ><img src="imgs/icons/facebook_mobile.svg" alt="facebook_logo"
+            /></a>
+          </li>
+          <li id="insta_red">
+            <a href=""
+              ><img src="imgs/icons/insta_red.svg" alt="instagram_logo"
+            /></a>
+          </li>
+          <li id="insta">
+            <a href=""
+              ><img src="imgs/icons/instagram.svg" alt="instagram_logo"
+            /></a>
+          </li>
+          <li id="tt">
+            <a href=""
+              ><img src="imgs/icons/twitter.svg" alt="twitter_logo"
+            /></a>
+          </li>
+          <li id="youtube">
+            <a href=""
+              ><img src="imgs/icons/youtube.svg" alt="youtube_logo"
+            /></a>
+          </li>
+        </ul>
+      </section>
+    </footer>
+
+    <script src="menu.js"></script>
+    <script src="slides.js"></script>
+    <script>
+      initSlider({
+        autoPlay: true,
+        startAtIndex: 0,
+        timeInterval: 3000,
+      });
+    </script>
+  </body>
 </html>
