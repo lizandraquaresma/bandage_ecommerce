@@ -177,6 +177,7 @@ header {
 
 .slide-list {
   display: flex;
+  transition: transform 0.5s ease-in-out;
 }
 
 .slide-item {
@@ -263,22 +264,6 @@ header {
   right: 20px;
 }
 
-.slide-controls {
-  margin: 8px;
-}
-
-.slide-control-button {
-  width: 24px;
-  color: #fff;
-  cursor: pointer;
-  background: transparent;
-  font-size: 32px;
-  margin: 0 1px;
-}
-
-.slide-control-button.active {
-  color: #fefefe;
-}
 
 #categories {
   background-color: var(--light-gray-1);
@@ -1219,6 +1204,10 @@ footer {
             margin: 8px 4px;
           }
         }
+      }
+
+      .products .item:nth-child(n+4) {
+        display: none;
       }
 
       .products {
